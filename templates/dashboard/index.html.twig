@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DashboardController!{% endblock %}
+
+{% block body %}
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav" style="display:flex;justify-content:space-between;">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">BANKING APP</a>
+    </li>
+  
+    <li class="nav-item">
+      <a class="nav-link" href="/logout">Deconnexion</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- A vertical navbar -->
+<div class="row">
+
+<nav class="navbar bg-dark col-2">
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link text-light" href="#">Client</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light" href="/client/new">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ajouter Client</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light" href="/client"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;liste des Clients</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light" href="">Comptes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light" href="/user/new">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ajouter compte</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light" href="/user">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;liste des comptes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light" href="#">agences</a>
+    </li>
+<li class="nav-item">
+      <a class="nav-link text-light" href="/agence/new"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ajouter agences</a>
+    </li><li class="nav-item">
+      <a class="nav-link text-light" href="/agence">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; liste des agences</a>
+    </li><li class="nav-item">
+      <a class="nav-link text-light" href="#">transactions</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light" href="/transaction/new">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ajouter transaction</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light" href="/transaction">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;liste des transactionss</a>
+    </li>
+  </ul>
+
+</nav>
+<div class="col-10">
+{% block content %}
+{% endblock %}
+</div>
+</div>
+
+
+{% endblock %}
